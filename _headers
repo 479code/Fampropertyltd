@@ -1,0 +1,10 @@
+/assets/*
+  Cache-Control: public, max-age=2592000
+/assets/css/*
+  Cache-Control: public, max-age=86400
+/assets/js/*
+  Cache-Control: public, max-age=86400
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/*
+  X-Content-Type-Options: nosniff
