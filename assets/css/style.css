@@ -105,7 +105,7 @@ footer li{margin-bottom:11px;font-size:14px;color:rgba(255,255,255,.65)}footer l
 #lbImage{width:100%;height:100%;object-fit:contain;border-radius:12px;opacity:0;transition:opacity .3s}#lbImage.show{opacity:1}
 .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font-size:30px;cursor:pointer;line-height:1}.lb-nav:hover{background:var(--red);border-color:var(--red)}
 .lb-prev{left:14px}.lb-next{right:14px}.lb-count{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);font-size:13px;background:rgba(0,0,0,.6);padding:5px 14px;border-radius:999px}
-.lb-bottom{padding:16px 24px 22px}.lb-thumbs{display:flex;gap:10px;overflow-x:auto;justify-content:center}
+.lb-bottom{padding:16px 24px 22px}.lb-thumbs{display:flex;gap:10px;overflow-x:auto}.lb-thumbs img:first-child{margin-left:auto}.lb-thumbs img:last-child{margin-right:auto}
 .lb-thumbs img{height:62px;width:auto;border-radius:8px;opacity:.5;cursor:pointer;border:2px solid transparent;flex:none;transition:.2s}.lb-thumbs img.active,.lb-thumbs img:hover{opacity:1;border-color:var(--red)}
 /* responsive */
 @media(max-width:1000px){
@@ -125,3 +125,5 @@ footer li{margin-bottom:11px;font-size:14px;color:rgba(255,255,255,.65)}footer l
  .cta-btns{width:100%}.cta-btns .btn{flex:1;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+.pc-client{font-size:12.5px!important;color:var(--ink)!important;font-weight:600;margin:-8px 0 14px!important}
+.pc-img img{object-position:50% 55%}
