@@ -1,4 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#FF3B44"/>
-  <path d="M32 10 L54 28 L46 28 L46 54 L18 54 L18 28 L10 28 Z" fill="#06070A"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs>
+    <linearGradient id="roofLit" x1="30" y1="4" x2="92" y2="47" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF4A3D"/>
+      <stop offset="0.45" stop-color="#E12A22"/>
+      <stop offset="1" stop-color="#5C2A22"/>
+    </linearGradient>
+    <linearGradient id="roofShadow" x1="30" y1="4" x2="3" y2="57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7A3A2C"/>
+      <stop offset="1" stop-color="#3A2018"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAF6FC"/>
+      <stop offset="0.55" stop-color="#8FD2F0"/>
+      <stop offset="1" stop-color="#57B4E0"/>
+    </linearGradient>
+  </defs><g transform="translate(0,2) scale(1.04)">
+    <polygon points="9,55 57,54 57,93 9,90" fill="#E7F1F6" stroke="#12181a" stroke-width="1.2" stroke-linejoin="round"/>
+    <polygon points="57,54 92,49 92,84 57,93" fill="#C4D6DF" stroke="#12181a" stroke-width="1.2" stroke-linejoin="round"/>
+    <polygon points="9,90 57,93 92,84 92,87 57,96 9,93" fill="#12181a"/>
+    <polygon points="30,12 57,54 9,55" fill="#fff" data-gable/><polygon points="30,4 3,57 9,55 30,12" fill="url(#roofShadow)" stroke="#2a150f" stroke-width="1" stroke-linejoin="round"/>
+    <polygon points="30,4 92,45 92,49 57,54 30,12" fill="url(#roofLit)" stroke="#3a1712" stroke-width="1" stroke-linejoin="round"/>
+    <rect x="12" y="71" width="12" height="19" fill="#14191b"/>
+    <rect x="28" y="65" width="19" height="19" fill="#14191b"/>
+    <rect x="30.3" y="67.3" width="6.3" height="6.3" fill="url(#glass)"/>
+    <rect x="37.8" y="67.3" width="6.3" height="6.3" fill="url(#glass)"/>
+    <rect x="30.3" y="75" width="6.3" height="6.3" fill="url(#glass)"/>
+    <rect x="37.8" y="75" width="6.3" height="6.3" fill="url(#glass)"/>
+    <rect x="63" y="63" width="16" height="16" fill="#14191b"/>
+    <rect x="65.2" y="65.2" width="5.2" height="5.2" fill="url(#glass)"/>
+    <rect x="71.6" y="65.2" width="5.2" height="5.2" fill="url(#glass)"/>
+    <rect x="65.2" y="71.6" width="5.2" height="5.2" fill="url(#glass)"/>
+    <rect x="71.6" y="71.6" width="5.2" height="5.2" fill="url(#glass)"/>
+  </g></svg>

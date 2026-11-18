@@ -17,10 +17,10 @@ const GALLERIES = {"nac_bauchi": ["/assets/img/gallery/nac_bauchi/1.webp", "/ass
     set=GALLERIES[c.dataset.gallery]||[]; if(!set.length) return; last=c;
     title.textContent=c.dataset.title; loc.textContent=c.dataset.loc;
     thumbs.innerHTML=''; set.forEach((s,k)=>{const t=document.createElement('img');t.src=THUMB.test(s)?s.replace(/\/(\d+)\.webp$/,'/t/$1.webp'):s;t.alt='';t.loading='lazy';t.onclick=()=>show(k);thumbs.appendChild(t);});
-    lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; show(0); $('lbClose').focus();
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; show(+c.dataset.i||0); $('lbClose').focus();
   }
   function close(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';if(last)last.focus();}
-  document.querySelectorAll('.proj-card').forEach(c=>{
+  document.querySelectorAll('[data-gallery]').forEach(c=>{
     c.addEventListener('click',e=>{if(window.__dragged){e.preventDefault();return;}open(c)});
     c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(c);}});
   });
